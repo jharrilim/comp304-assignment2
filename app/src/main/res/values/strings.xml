@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="vegetables">Vegetables</string>
+    <string name="fruits">Fruits</string>
+    <string name="grains">Grain/Cereal Foods</string>
+    <string name="dairy">Dairy</string>
+</resources>
