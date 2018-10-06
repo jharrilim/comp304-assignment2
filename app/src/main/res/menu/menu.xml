@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/new_game"
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_vegetableBtn"
         android:title="@string/vegetables" />
-    <item android:id="@+id/fruits"
+    <item
+        android:id="@+id/menu_fruitsBtn"
         android:title="@string/fruits" />
-    <item android:id="@+id/grains"
+    <item
+        android:id="@+id/menu_grainsBtn"
         android:title="@string/grains" />
-    <item android:id="@+id/dairy"
+    <item
+        android:id="@+id/menu_dairyBtn"
         android:title="@string/dairy" />
 </menu>

@@ -1,9 +1,9 @@
 package comp304.josephharrisonlim.assignment2
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
+import android.view.View
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,10 +12,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        super.onCreateOptionsMenu(menu)
-        val inflater: MenuInflater = menuInflater
-        inflater.inflate(R.menu.menu, menu)
-        return true
+    protected fun enterBtnClicked(view: View?) {
+        if (view == null) return
+        startActivity(Intent(this, MenuActivity::class.java))
     }
 }

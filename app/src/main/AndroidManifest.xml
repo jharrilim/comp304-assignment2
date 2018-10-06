@@ -12,16 +12,34 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".foods.VegetablesActivity" />
-        <activity android:name=".foods.FruitsActivity" />
-        <activity android:name=".foods.GrainsActivity" />
-        <activity android:name=".foods.MeatsActivity" />
-        <activity android:name=".foods.DairyActivity"></activity>
+        <activity
+            android:name=".MenuActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".foods.VegetablesActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".foods.FruitsActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".foods.GrainsActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".foods.MeatsActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".foods.DairyActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".FinalOrderActivity"
+            android:parentActivityName=".MenuActivity" />
     </application>
 
 </manifest>
