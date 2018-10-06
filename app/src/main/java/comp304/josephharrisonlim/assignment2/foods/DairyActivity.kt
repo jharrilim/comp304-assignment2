@@ -1,6 +1,5 @@
 package comp304.josephharrisonlim.assignment2.foods
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.CheckBox
 import comp304.josephharrisonlim.assignment2.AbstractOptionsMenuActivity
