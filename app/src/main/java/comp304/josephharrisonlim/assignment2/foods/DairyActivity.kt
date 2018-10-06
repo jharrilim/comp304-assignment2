@@ -3,6 +3,7 @@ package comp304.josephharrisonlim.assignment2.foods
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.CheckBox
+import comp304.josephharrisonlim.assignment2.AbstractOptionsMenuActivity
 import comp304.josephharrisonlim.assignment2.data.FoodDatabase
 import comp304.josephharrisonlim.assignment2.R
 import comp304.josephharrisonlim.assignment2.data.Food
@@ -12,7 +13,7 @@ import io.reactivex.schedulers.Schedulers
 import io.reactivex.android.schedulers.AndroidSchedulers
 import kotlinx.android.synthetic.main.activity_dairy.*
 
-class DairyActivity : AppCompatActivity() {
+class DairyActivity : AbstractOptionsMenuActivity() {
 
     private val dairyItems: Array<Food> = arrayOf(
             Food("Milk", 2.99, FoodType.DAIRY.name),
@@ -31,7 +32,7 @@ class DairyActivity : AppCompatActivity() {
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe { foods ->
                         for (f in foods) {
-                            if (f.name == food.name) {
+                            if (f == food) {
                                 btn.isChecked = true
                             }
                         }
