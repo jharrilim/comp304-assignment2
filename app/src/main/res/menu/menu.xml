@@ -13,4 +13,7 @@
     <item
         android:id="@+id/menu_dairyBtn"
         android:title="@string/dairy" />
+    <item
+        android:id="@+id/menu_meatBtn"
+        android:title="@string/meat" />
 </menu>

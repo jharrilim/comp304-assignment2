@@ -6,10 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
-import comp304.josephharrisonlim.assignment2.foods.DairyActivity
-import comp304.josephharrisonlim.assignment2.foods.FruitsActivity
-import comp304.josephharrisonlim.assignment2.foods.GrainsActivity
-import comp304.josephharrisonlim.assignment2.foods.VegetablesActivity
+import comp304.josephharrisonlim.assignment2.foods.*
 
 class MenuActivity : AppCompatActivity() {
 
@@ -42,6 +39,10 @@ class MenuActivity : AppCompatActivity() {
             }
             R.id.menu_grainsBtn -> {
                 startActivity(Intent(this, GrainsActivity::class.java))
+                true
+            }
+            R.id.menu_meatBtn -> {
+                startActivity(Intent(this, MeatsActivity::class.java))
                 true
             }
             else -> super.onOptionsItemSelected(item)

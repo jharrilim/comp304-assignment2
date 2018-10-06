@@ -5,4 +5,5 @@
     <string name="fruits">Fruits</string>
     <string name="grains">Grain/Cereal Foods</string>
     <string name="dairy">Dairy</string>
+    <string name="meat">Meats</string>
 </resources>
