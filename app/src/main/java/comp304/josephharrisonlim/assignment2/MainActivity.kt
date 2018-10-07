@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    protected fun enterBtnClicked(view: View?) {
+    fun enterBtnClicked(view: View?) {
         if (view == null) return
         startActivity(Intent(this, MenuActivity::class.java))
     }

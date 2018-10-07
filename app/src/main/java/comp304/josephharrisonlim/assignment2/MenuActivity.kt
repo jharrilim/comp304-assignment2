@@ -28,7 +28,7 @@ class MenuActivity : AbstractOptionsMenuActivity() {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe { foods ->
-                    clearLayouts()
+                    refresh()
                     for (food in foods) {
                         fillLayout(food)
                         cost += food.price
@@ -46,7 +46,8 @@ class MenuActivity : AbstractOptionsMenuActivity() {
         }
     }
 
-    private fun clearLayouts() {
+    private fun refresh() {
+        cost = 0.0
         checkoutItemNamesLayout.removeAllViews()
         checkoutItemPricesLayout.removeAllViews()
     }
