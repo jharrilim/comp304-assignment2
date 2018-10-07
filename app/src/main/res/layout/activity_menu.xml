@@ -81,12 +81,13 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/orderDetailsBtn"
+            android:id="@+id/proceedToPaymentBtn"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
+            android:onClick="goToPaymentScreen"
             android:text="@string/payment_opts"
             android:textSize="12sp"
             android:typeface="sans" />

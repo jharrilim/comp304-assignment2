@@ -1,6 +1,8 @@
 package comp304.josephharrisonlim.assignment2
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import comp304.josephharrisonlim.assignment2.data.Food
 import comp304.josephharrisonlim.assignment2.data.FoodDatabase
@@ -34,6 +36,14 @@ class MenuActivity : AbstractOptionsMenuActivity() {
                     totalCostTxt.setText("Total: $%.2f".format(cost))
                 }
         this.disposable.add(disp)
+    }
+
+    fun goToPaymentScreen(view: View) {
+        when (view.id) {
+            R.id.proceedToPaymentBtn -> {
+                startActivity(Intent(this,  PaymentActivity::class.java))
+            }
+        }
     }
 
     private fun clearLayouts() {

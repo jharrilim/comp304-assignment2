@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:launchMode="singleTop">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -22,8 +24,8 @@
         </activity>
         <activity
             android:name=".MenuActivity"
-            android:parentActivityName=".MainActivity"
-            android:launchMode="singleTop"/>
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".foods.VegetablesActivity"
             android:parentActivityName=".MenuActivity" />
@@ -41,6 +43,8 @@
             android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".FinalOrderActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity android:name=".PaymentActivity"
             android:parentActivityName=".MenuActivity" />
     </application>
 
