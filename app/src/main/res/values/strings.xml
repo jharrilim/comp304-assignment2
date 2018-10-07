@@ -7,4 +7,7 @@
     <string name="dairy">Dairy</string>
     <string name="meat">Meats</string>
     <string name="checkout">Checkout</string>
+    <string name="proceedToOrder">Review Order</string>
+    <string name="food_items">Food Items</string>
+    <string name="cost">Cost</string>
 </resources>
