@@ -12,4 +12,8 @@
     <string name="cost">Cost</string>
     <string name="cart">Cart</string>
     <string name="payment_opts">Proceed to Payment</string>
+    <string name="payment_options">Payment Options</string>
+    <string name="cash">Cash</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="debit_card">Debit Card</string>
 </resources>
