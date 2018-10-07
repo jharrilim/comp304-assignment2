@@ -15,9 +15,9 @@ import kotlinx.android.synthetic.main.activity_meats.*
 class MeatsActivity : AbstractOptionsMenuActivity() {
 
     private val meatItems: Array<Food> = arrayOf(
-            Food("Chicken Wings", 9.00, FoodType.GRAINS.name),
-            Food("Striploin Steaks", 12.00, FoodType.GRAINS.name),
-            Food("Bacon", 5.00, FoodType.GRAINS.name)
+            Food("Chicken Wings", 9.00, FoodType.MEATS.name),
+            Food("Striploin Steaks", 12.00, FoodType.MEATS.name),
+            Food("Bacon", 5.00, FoodType.MEATS.name)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
