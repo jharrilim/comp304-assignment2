@@ -3,6 +3,7 @@ package comp304.josephharrisonlim.assignment2
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.app.NavUtils
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -13,6 +14,15 @@ abstract class AbstractOptionsMenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_abstract_options_menu)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
+
+    override fun onNavigateUp(): Boolean {
+        return super.onNavigateUp()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -43,6 +53,11 @@ abstract class AbstractOptionsMenuActivity : AppCompatActivity() {
             }
             R.id.menu_meatBtn -> {
                 startActivity(Intent(this, MeatsActivity::class.java))
+                true
+            }
+            R.id.home -> {
+                super.onOptionsItemSelected(item)
+                NavUtils.navigateUpFromSameTask(this)
                 true
             }
             else -> super.onOptionsItemSelected(item)

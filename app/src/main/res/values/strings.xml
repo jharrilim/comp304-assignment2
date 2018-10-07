@@ -10,4 +10,6 @@
     <string name="proceedToOrder">Review Order</string>
     <string name="food_items">Food Items</string>
     <string name="cost">Cost</string>
+    <string name="cart">Cart</string>
+    <string name="payment_opts">Proceed to Payment</string>
 </resources>
