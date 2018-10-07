@@ -6,4 +6,5 @@
     <string name="grains">Grain/Cereal Foods</string>
     <string name="dairy">Dairy</string>
     <string name="meat">Meats</string>
+    <string name="checkout">Checkout</string>
 </resources>

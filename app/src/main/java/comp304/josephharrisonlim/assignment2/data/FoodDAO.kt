@@ -22,4 +22,7 @@ interface FoodDAO {
 
     @Delete
     fun delete(food: Food)
+
+    @Query("DELETE FROM foodData")
+    fun deleteAllFood()
 }
