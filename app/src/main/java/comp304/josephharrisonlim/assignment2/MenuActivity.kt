@@ -51,7 +51,6 @@ class MenuActivity : AbstractOptionsMenuActivity(), ClearCartFragment.NoticeDial
     }
 
     override fun onDialogNegativeClick(dialog: DialogFragment) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
 

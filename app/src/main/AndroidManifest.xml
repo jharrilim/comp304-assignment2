@@ -47,7 +47,9 @@
         <activity
             android:name=".PaymentActivity"
             android:parentActivityName=".MenuActivity" />
-        <activity android:name=".PaymentInformationActivity"></activity>
+        <activity
+            android:name=".PaymentInformationActivity"
+            android:parentActivityName=".MenuActivity" />
     </application>
 
 </manifest>
