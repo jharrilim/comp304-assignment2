@@ -20,6 +20,7 @@ class PaymentActivity : AppCompatActivity() {
                 when (paymentOptionGroup.checkedRadioButtonId) {
                     0 -> {
                         bundle.putInt("T_PYMT", 0)
+                        return startActivity(Intent(this, FinalOrderActivity::class.java))
                     }
                     1 -> {
                         bundle.putInt("T_PYMT", 1)
@@ -28,7 +29,7 @@ class PaymentActivity : AppCompatActivity() {
                         bundle.putInt("T_PYMT", 2)
                     }
                 }
-                startActivity(Intent(this, FinalOrderActivity::class.java), bundle)
+                startActivity(Intent(this, PaymentInformationActivity::class.java), bundle)
             }
         }
     }

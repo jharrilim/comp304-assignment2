@@ -16,4 +16,15 @@
     <string name="cash">Cash</string>
     <string name="credit_card">Credit Card</string>
     <string name="debit_card">Debit Card</string>
+    <string name="full_name">Full Name</string>
+    <string name="full_name_desc">As it appears on your credit/debit card</string>
+    <string name="billing_info">Billing Information</string>
+    <string name="clear">Clear</string>
+    <string name="clear_cart">Clear Cart</string>
+    <string name="clear_cart_confirmation">Are you sure you wish to clear your cart?</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

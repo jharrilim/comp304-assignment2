@@ -21,10 +21,6 @@ abstract class AbstractOptionsMenuActivity : AppCompatActivity() {
         finish()
     }
 
-    override fun onNavigateUp(): Boolean {
-        return super.onNavigateUp()
-    }
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         super.onCreateOptionsMenu(menu)
         val inflater: MenuInflater = menuInflater

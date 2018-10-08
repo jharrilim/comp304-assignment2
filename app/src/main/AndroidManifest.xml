@@ -44,8 +44,10 @@
         <activity
             android:name=".FinalOrderActivity"
             android:parentActivityName=".MenuActivity" />
-        <activity android:name=".PaymentActivity"
+        <activity
+            android:name=".PaymentActivity"
             android:parentActivityName=".MenuActivity" />
+        <activity android:name=".PaymentInformationActivity"></activity>
     </application>
 
 </manifest>
